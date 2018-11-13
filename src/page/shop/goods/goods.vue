@@ -5,13 +5,31 @@
 
 <script>
     export default {
+        components: {},
         data() {
             return {
                 key: value
             }
         },
+        computed: {
+
+        },
         created() {
         },
+        mounted() {
+            
+        },
+        methods: {
+            name() {
+                
+            }
+        },
+        watch: {
+
+        },
+        filters: {
+
+        }
     }
 </script>
 
