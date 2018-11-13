@@ -23,8 +23,5 @@
 </script>
 
 <style lang="scss" scoped>
-    .app {
-        height: 100%;
-        background-color: #f2f2f2;
-    }
+
 </style>

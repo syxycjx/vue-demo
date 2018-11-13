@@ -14,7 +14,7 @@ if(window.location.host == 'www.baidu.com') {
 
 
 // 接口地址模块     //最佳实践  所有地址必须加Url后缀 方便全局查找
-const path = {
+export const path = {
     initUrl:       '/init',
     loginUrl:      '/login',
     userIdUrl:     '/user/id',
@@ -58,7 +58,7 @@ axios.interceptors.response.use(
 
 
 // 接口请求方法
-const ajaxData = {
+export const axios = {
     // 默认参数示例
     defaultData: {
         scoure: 'h5',       // 来源 可以是h5或者是微信或者是app等
@@ -127,8 +127,7 @@ const ajaxData = {
 }
 
 
-// 输出ajax方法模块
-export {path, ajaxData}
+
 
 
 // axios示例

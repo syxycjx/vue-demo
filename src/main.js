@@ -5,12 +5,19 @@ import App from './App'
 import router from './router'
 import axios from 'axios'
 import 'lib-flexible'
+import VueAwesomeSwiper from 'vue-awesome-swiper'
+
+// require styles
+import 'swiper/dist/css/swiper.css'
+
+
 
 Vue.config.productionTip = false
-
 Vue.prototype.$http = axios
+
 // 写入原型方法  因为axios不是插件
 
+Vue.use(VueAwesomeSwiper, /* { default global options } */)
 
 /* eslint-disable no-new */
 new Vue({
@@ -35,6 +42,6 @@ window.$init = function (callback) {
   if(ajax.getQueryString('wscinit') == 'reload'){
     localStorage.clear()        // 清除全部数据
   }
-  // 获得默认数据
+  // 获得本地默认数据
   ajax.getDefaultData()
 }

@@ -1,7 +1,7 @@
 <template>
     <transition name="fade">
         <div class="view" v-show="show">
-            <div class="box">
+            <div class="modal-box">
                 <!-- 插槽 -->
                 <slot></slot>
             </div>
@@ -26,13 +26,14 @@
         right: 0;
         bottom: 0;
         left: 0;
-        width: 100vw;
-        height: 100vh;
+        margin: 0 auto;
         background-color: rgba(000, 000, 000, 0.3);
-        >.box {
-            width: 550px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        >.modal-box {
+            width: 70%;
             padding: 30px;
-            margin: 300px auto;
             background-color: #fff;
             border-radius: 10px;
             box-shadow: 0 0 10px #333;
@@ -45,7 +46,6 @@
     }
     .fade-enter,
     .fade-leave-to
-    /* .fade-leave-active below version 2.1.8 */
     {
         opacity: 0;
     }
