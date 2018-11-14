@@ -41,20 +41,17 @@
         components: {
             vModal
         },
-        mounted() {
-            
-        },
         data() {
             return {
-                info: '', // 接口信息
-                loading: false, // loading页面开关
-                modalShow: false, // modal弹窗开关
+                info            : '', // 接口信息
+                loading         : false, // loading页面开关
+                modalShow       : false, // modal弹窗开关
                 swiperOption: {
-                    speed: 500,
-                    autoplay: true,
-                    spaceBetween: 0,
-                    slidesPerView: 1.5,
-                    centeredSlides: true,
+                    speed           : 500,
+                    autoplay        : true,
+                    spaceBetween    : 0,
+                    slidesPerView   : 1.5,
+                    centeredSlides  : true,
                 }
             }
         },
@@ -67,6 +64,9 @@
             //     console.log(res)
             //     this.info = res.data.info
             // })
+        },
+        mounted() {
+            
         },
         methods: {
             alert() {

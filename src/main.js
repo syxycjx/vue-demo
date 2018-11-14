@@ -43,5 +43,7 @@ window.$init = function (callback) {
     localStorage.clear()        // 清除全部数据
   }
   // 获得本地默认数据
-  ajax.getDefaultData()
+  ajax.getDefaultData().then(res => {
+      callback()
+  })
 }
